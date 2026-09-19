@@ -449,31 +449,18 @@ export const botConfig = {
   // Set any feature to `false` to disable it globally.
   features: {
     // Core systems.
-    economy: true,
     leveling: true,
     moderation: true,
     logging: true,
-    welcome: true,
 
     // Community engagement systems.
     tickets: true,
     giveaways: true,
-    birthday: true,
-    counter: true,
 
     // Security and self-service systems.
-    verification: true,
     reactionRoles: true,
-    joinToCreate: true,
-
     // Utility/quality-of-life modules.
-    voice: true,
-    search: true,
     tools: true,
-    utility: true,
-    community: true,
-    fun: true,
-    music: true,
   },
 };
 
@@ -530,24 +517,15 @@ if (configErrors.length > 0) {
 export const BotConfig = botConfig;
 
 const COMMAND_CATEGORY_FEATURE_MAP = {
-  birthday: "birthday",
-  community: "community",
-  economy: "economy",
-  fun: "fun",
   giveaway: "giveaways",
-  jointocreate: "joinToCreate",
   leveling: "leveling",
   logging: "logging",
   moderation: "moderation",
-  music: "music",
   reaction_roles: "reactionRoles",
-  search: "search",
   serverstats: "counter",
   ticket: "tickets",
   tools: "tools",
-  utility: "utility",
-  verification: "verification",
-  welcome: "welcome",
+  clear: "clear",
 };
 
 function normalizeCategoryKey(category) {
